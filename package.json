@@ -1,0 +1,123 @@
+{
+  "name": "bnbgame-front",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "analyze": "ANALYZE=true next build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "resolutions": {
+    "resolve": "1.20.0"
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "eslint --max-warnings=0",
+      "git add"
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.14.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@ethersproject/bignumber": "^5.5.0",
+    "@ethersproject/bytes": "^5.4.0",
+    "@ethersproject/contracts": "^5.5.0",
+    "@ethersproject/keccak256": "^5.4.0",
+    "@ethersproject/providers": "^5.4.1",
+    "@ethersproject/rlp": "^5.4.0",
+    "@ethersproject/units": "^5.4.0",
+    "@headlessui/react": "^1.3.0",
+    "@hookform/resolvers": "^2.8.2",
+    "@reach/dialog": "^0.15.3",
+    "@reduxjs/toolkit": "^1.6.1",
+    "@tippyjs/react": "^4.2.6",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "^6.2.13",
+    "@web3-react/walletlink-connector": "^6.2.14",
+    "animated-number-react": "^0.1.2",
+    "axios": "^0.21.1",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "clsx": "^1.1.1",
+    "date-fns": "^2.23.0",
+    "ethers": "^5.6.9",
+    "i18next-chained-backend": "^3.0.2",
+    "i18next-http-backend": "^1.4.1",
+    "i18next-localstorage-backend": "^3.1.3",
+    "lodash": "^4.17.21",
+    "next": "^11.0.1",
+    "next-i18next": "^11.0.0",
+    "nookies": "^2.5.2",
+    "qs": "^6.10.1",
+    "react": "^17.0.2",
+    "react-countdown": "^2.3.2",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.18.0",
+    "react-input-mask": "^2.0.4",
+    "react-intersection-observer": "^8.33.0",
+    "react-lottie": "^1.2.3",
+    "react-placeholder": "^4.1.0",
+    "react-redux": "^7.2.5",
+    "react-toastify": "^8.0.3",
+    "request-context": "^2.0.0",
+    "sass": "^1.43.2",
+    "scss": "^0.2.4",
+    "tailwindcss-border-gradient-radius": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
+    "@next/bundle-analyzer": "^12.3.0",
+    "autoprefixer": "^10.2.6",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "file-loader": "^6.2.0",
+    "husky": "4",
+    "lint-staged": "^12.1.4",
+    "postcss": "^8.3.7",
+    "prettier": "^2.2.1",
+    "resolve": "1.22.0",
+    "tailwindcss": "^2.2.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
